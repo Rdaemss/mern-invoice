@@ -23,7 +23,7 @@ app.get("/api/v1/test", (req,res) => {
     res.json({Hi: "Welcome to the Invoice App"})
 })
 
-const PORT = process.env.PORT 
+const PORT = process.env.PORT || 1997
 
 app.listen(PORT, () => {
     console.log(
