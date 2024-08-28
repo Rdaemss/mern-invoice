@@ -18,9 +18,8 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        position: "fixed",
-        bottm: 0,
-        width: "100%",
+        bgcolor: "#000000",
+        marginTop: "auto",
       }}
     >
       <CssBaseline />
@@ -37,7 +36,7 @@ const Footer = () => {
           variant='subtitle1'
           align='center'
           component='p'
-          sx={{ color: "#f07f011" }}
+          sx={{ color: "#07f011" }}
         >
           <FaMoneyBillWave /> Because Money is as important as oxygen!{" "}
           <FaMoneyBillWave />
