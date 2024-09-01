@@ -43,7 +43,7 @@ const LoginPage = () => {
           {/* login form */}
           <LoginForm />
           {/* or sign in with Google */}
-          <Grid2 item xs={12}>
+          <Grid2 item="true" xs={12}>
             <Box sx={{ alignItems: "center", display: "flex", mt: 2 }}>
               <Divider sx={{ flexGrow: 1 }} orientation="horizontal" />
               <Button
@@ -80,7 +80,7 @@ const LoginPage = () => {
             orientation="horizontal"
           />
           {/* forgot password */}
-          <Grid2 item xs={12}>
+          <Grid2 item="true" xs={12}>
             <Box
               sx={{ justif: "center", display: "flex", alignItems: "center" }}
             >

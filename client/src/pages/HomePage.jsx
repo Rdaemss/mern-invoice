@@ -23,22 +23,22 @@ const CreateAccountButton = styled(Button)({
 const HomePage = () => {
   const navigate = useNavigate();
   return (
-    <header className='masthead main-bg-image'>
+    <header className="masthead main-bg-image">
       <Grid2>
-        <Grid2 item md={12} lg={12} sm={6}>
+        <Grid2 item="true" md={12} lg={12} sm={6}>
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <StyledTypography
-              variant='h1'
-              align='center'
+              variant="h1"
+              align="center"
               sx={{ textTransform: "uppercase", mt: "13rem" }}
-              className='homepage-header'
+              className="homepage-header"
             >
               MERN Invoice
             </StyledTypography>
             <Typography
-              align='center'
-              variant='h4'
-              component='div'
+              align="center"
+              variant="h4"
+              component="div"
               gutterBottom
               sx={{ color: "rgba(255,255,255,0.6)" }}
             >
@@ -55,15 +55,15 @@ const HomePage = () => {
             }}
           >
             <CreateAccountButton
-              variant='contained'
-              color='success'
-              size='large'
+              variant="contained"
+              color="success"
+              size="large"
               sx={{ fontSize: "1.5em", borderRadius: "25px" }}
               onClick={() => navigate("/register")}
             >
               <Link
                 component={RouterLink}
-                to='/register'
+                to="/register"
                 sx={{
                   textDecoration: "none",
                   color: "white",

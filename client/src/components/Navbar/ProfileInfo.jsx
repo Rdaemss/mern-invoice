@@ -124,10 +124,10 @@ const ProfileInfo = ({ user }) => {
           horizontal: "right",
         }}
         open={open}
+        paper
         onClose={handleCloseUserMenu}
         onClick={handleCloseUserMenu}
         slotProps={{
-          paper,
           elevation: 0,
           sx: {
             overflow: "visible",
@@ -213,48 +213,39 @@ const ProfileInfo = ({ user }) => {
               {/* view profile */}
               <StyledMenuItem onClick={() => navigate("/profile")}>
                 <Grid2>
-                  <Item>
-                    <Stack direction="row" alignItems="center" spacing={2}>
-                      <ListItemIcon>
-                        <SentimentSatisfiedAlttwoToneIcon
-                          color="blue"
-                          sx={{ fontSize: 45 }}
-                        />
-                      </ListItemIcon>
-                      <Typography variant="h6">View Profile</Typography>
-                    </Stack>
-                  </Item>
+                  <Stack direction="row" alignItems="center" spacing={2}>
+                    <ListItemIcon>
+                      <SentimentSatisfiedAlttwoToneIcon
+                        color="blue"
+                        sx={{ fontSize: 45 }}
+                      />
+                    </ListItemIcon>
+                    <Typography variant="h6">View Profile</Typography>
+                  </Stack>
                 </Grid2>
               </StyledMenuItem>
               <StyledProfileDivider />
               {/* Dashboard  */}
               <StyledMenuItem onClick={() => navigate("/dashboard")}>
                 <Grid2>
-                  <Item>
-                    <Stack direction="row" alignItems="center" spacing={2}>
-                      <ListItemIcon>
-                        <SpeedTwoToneIcon
-                          color="yellow"
-                          sx={{ fontSize: 45 }}
-                        />
-                      </ListItemIcon>
-                      <Typography variant="h6">Dashboard</Typography>
-                    </Stack>
-                  </Item>
+                  <Stack direction="row" alignItems="center" spacing={2}>
+                    <ListItemIcon>
+                      <SpeedTwoToneIcon color="yellow" sx={{ fontSize: 45 }} />
+                    </ListItemIcon>
+                    <Typography variant="h6">Dashboard</Typography>
+                  </Stack>
                 </Grid2>
               </StyledMenuItem>
               <StyledProfileDivider />
               {/* logout  */}
               <StyledMenuItem onClick={handleLogout}>
                 <Grid2>
-                  <Item>
-                    <Stack direction="row" alignItems="center" spacing={2}>
-                      <ListItemIcon>
-                        <Logout color="green" sx={{ fontSize: 45 }} />
-                      </ListItemIcon>
-                      <Typography variant="h6">Logout</Typography>
-                    </Stack>
-                  </Item>
+                  <Stack direction="row" alignItems="center" spacing={2}>
+                    <ListItemIcon>
+                      <Logout color="green" sx={{ fontSize: 45 }} />
+                    </ListItemIcon>
+                    <Typography variant="h6">Logout</Typography>
+                  </Stack>
                 </Grid2>
               </StyledMenuItem>
             </Stack>

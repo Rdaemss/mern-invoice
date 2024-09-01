@@ -26,7 +26,7 @@ const RegisterPage = () => (
       }}
     >
       <Grid2>
-        <Grid2 item xs={12}>
+        <Grid2 item="true" xs={12}>
           <Box
             sx={{
               display: "flex",
@@ -70,7 +70,7 @@ const RegisterPage = () => (
           </Button>
         </Box>
         {/* or sign up with google */}
-        <Grid2 item xs={12}>
+        <Grid2 item="true" xs={12}>
           <Box sx={{ alignItems: "center", display: "flex" }}>
             <Divider sx={{ flexGrow: 1 }} orientation="horizontal" />
             <Button

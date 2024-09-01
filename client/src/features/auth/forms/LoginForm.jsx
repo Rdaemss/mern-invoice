@@ -96,7 +96,7 @@ const LoginForm = () => {
             ) : (
               <Grid2 container spacing={3}>
                 {/* Email */}
-                <Grid2 item xs={12}>
+                <Grid2 item="true" xs={12}>
                   <Stack spacing={1}>
                     <InputLabel htmlFor="email-signup">
                       Email Address*
@@ -120,7 +120,7 @@ const LoginForm = () => {
                   </Stack>
                 </Grid2>
                 {/* password */}
-                <Grid2 item xs={12}>
+                <Grid2 item="true" xs={12}>
                   <Stack spacing={1}>
                     <InputLabel htmlFor="password-signup">Password</InputLabel>
                     <OutlinedInput
@@ -158,7 +158,7 @@ const LoginForm = () => {
                   </Stack>
                 </Grid2>
                 {/* forgot password */}
-                <Grid2 item xs={12}>
+                <Grid2 item="true" xs={12}>
                   <Box
                     sx={{
                       display: "flex",
@@ -180,7 +180,7 @@ const LoginForm = () => {
                   </Box>
                 </Grid2>
                 {/* Login Button */}
-                <Grid2 item xs={12}>
+                <Grid2 item="true" xs={12}>
                   <AuthButtonAnimation>
                     <Button
                       disableElevation

@@ -1,4 +1,3 @@
-import logoutUser from "../../../../backend/controllers/auth/logoutController";
 import { baseApiSlice } from "../api/baseApiSlice";
 import { logOut } from "./authSlice";
 

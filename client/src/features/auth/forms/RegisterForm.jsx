@@ -132,7 +132,7 @@ const RegisterForm = () => {
             ) : (
               <Grid2 container spacing={3}>
                 {/* FirstName */}
-                <Grid2 item xs={12} md={6}>
+                <Grid2 item="true" xs={12} md={6}>
                   <Stack spacing={1}>
                     <InputLabel htmlFor="firstName-signup">
                       First Name*
@@ -156,7 +156,7 @@ const RegisterForm = () => {
                   </Stack>
                 </Grid2>
                 {/* LastName */}
-                <Grid2 item xs={12} md={6}>
+                <Grid2 item="true" xs={12} md={6}>
                   <Stack spacing={1}>
                     <InputLabel htmlFor="lastName-signup">
                       Last Name*
@@ -180,7 +180,7 @@ const RegisterForm = () => {
                   </Stack>
                 </Grid2>
                 {/* Username */}
-                <Grid2 item xs={12} md={6}>
+                <Grid2 item="true" xs={12} md={6}>
                   <Stack spacing={1}>
                     <InputLabel htmlFor="username-signup">Username</InputLabel>
                     <OutlinedInput
@@ -202,7 +202,7 @@ const RegisterForm = () => {
                   </Stack>
                 </Grid2>
                 {/* Email */}
-                <Grid2 item xs={12} md={6}>
+                <Grid2 item="true" xs={12} md={6}>
                   <Stack spacing={1}>
                     <InputLabel htmlFor="email-signup">
                       Email Address*
@@ -226,7 +226,7 @@ const RegisterForm = () => {
                   </Stack>
                 </Grid2>
                 {/* password */}
-                <Grid2 item xs={12}>
+                <Grid2 item="true" xs={12}>
                   <Stack spacing={1}>
                     <InputLabel htmlFor="password-signup">Password</InputLabel>
                     <OutlinedInput
@@ -265,8 +265,8 @@ const RegisterForm = () => {
                   </Stack>
                   {/* password strength indicator */}
                   <FormControl fullWidth sx={{ mt: 2 }}>
-                    <Grid2 Gridcontainer spacing={2} alignItems="center">
-                      <Grid2 item>
+                    <Grid2 container spacing={2} alignItems="center">
+                      <Grid2 item="true">
                         <Box
                           sx={{
                             bgcolor: level?.color,
@@ -276,7 +276,7 @@ const RegisterForm = () => {
                           }}
                         />
                       </Grid2>
-                      <Grid2 item>
+                      <Grid2 item="true">
                         <Typography variant="subtitle1" fontSize="0.75rem">
                           {level?.label}
                         </Typography>
@@ -285,7 +285,7 @@ const RegisterForm = () => {
                   </FormControl>
                 </Grid2>
                 {/* password Confirm */}
-                <Grid2 item xs={12}>
+                <Grid2 item="true" xs={12}>
                   <Stack spacing={1}>
                     <InputLabel htmlFor="passwordConfirm-signup">
                       Confirm Password
@@ -334,7 +334,7 @@ const RegisterForm = () => {
                   </Stack>
                 </Grid2>
                 {/* terms of service */}
-                <Grid2 item xs={12}>
+                <Grid2 item="true" xs={12}>
                   <Typography variant="body2">
                     By Signing up, you agree to our &nbsp;
                     <Link variant="subtitle2" component={RouterLink} to="#">
@@ -348,12 +348,12 @@ const RegisterForm = () => {
                 </Grid2>
                 {/* display any submission errors */}
                 {errors.submit && (
-                  <Grid2 item xs={12}>
+                  <Grid2 item="true" xs={12}>
                     <FormHelperText error>{errors.submit}</FormHelperText>
                   </Grid2>
                 )}
                 {/* Create account button */}
-                <Grid2 item xs={12}>
+                <Grid2 item="true" xs={12}>
                   <AuthButtonAnimation>
                     <Button
                       disableElevation
